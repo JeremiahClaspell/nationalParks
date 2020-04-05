@@ -23,7 +23,7 @@ function renderData (options) {
     for (let i=0; i<options.data.length; i++){
      console.log(options.data[i].fullName) 
      $('#results').prepend(
-         `<li>${options.data[i].fullName}<ul><li>${options.data[i].description}</li><li><a href="mailto:${options.data[i].contacts.emailAddresses[0].emailAddress}">${options.data[i].contacts.emailAddresses[0].emailAddress}</a></li>
+         `<li>${options.data[i].fullName}<ul><li>${options.data[i].description}</li><li><a href="${options.data[i].url}" target="_blank">${options.data[i].url}</a></li>
          <li>
          ${options.data[i].addresses[0].line1}<br>
          ${options.data[i].addresses[0].line2}<br>
